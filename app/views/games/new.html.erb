@@ -1,0 +1,15 @@
+<h2>NEW GAME</h2>
+<div class="tiles">
+  <% @letters.each do |letter| %>
+    <p class="tile">
+      <%= letter %>
+    </p>
+  <% end %>
+</div>
+
+<form action="score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag 'letters', @letters %>
+  <input type="text" name="user_input" id="input">
+  <input type="submit" value="try your word" id="form-btn">
+</form>
