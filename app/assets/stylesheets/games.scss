@@ -1,0 +1,26 @@
+.tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vh;
+}
+
+.tile {
+  background-color: blue;
+  width: 20px;
+  padding: 11px;
+  font-size: 30px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px lightblue;
+  color: white;
+}
+
+#input {
+  width: 300px;
+  margin: 0 auto;
+  padding-right: 0;
+}
+
+#form-btn {
+  margin-left: 0;
+}
